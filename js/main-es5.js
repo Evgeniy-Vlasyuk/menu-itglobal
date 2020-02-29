@@ -10,7 +10,6 @@
   headerCountries.addEventListener('click', function () {
     arrDown.classList.toggle('arr-down_active');
     countriesHidden.classList.toggle('header__countries_hidden_active');
-    menu.classList.toggle('menu-countries_active');
     footer.classList.toggle('footer-padding');
   });
 })();
