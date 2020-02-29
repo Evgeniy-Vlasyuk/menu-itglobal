@@ -105,7 +105,7 @@
       function delay() {
         footer.classList.remove('footer_active');
       };
-      setTimeout(delay, 300);
+      setTimeout(delay, 1000);
     }); 
   } 
 }());
