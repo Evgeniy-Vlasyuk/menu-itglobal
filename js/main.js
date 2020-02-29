@@ -100,11 +100,12 @@
   let input = document.querySelector('.header__input-item');
   let footer = document.querySelector('.footer');
 
-  input.addEventListener('focus', () => {
-    footer.classList.toggle('footer_active');
-  });
-
-  input.addEventListener('blur', () => {
-    footer.classList.remove('footer_active');
-  });
+  if (innerHeight < 300) {
+    input.addEventListener('focus', () => {
+      footer.classList.add('footer_active');
+    });
+    input.addEventListener('blur', () => {
+      footer.classList.remove('footer_active');
+    });
+  } 
 }());

@@ -97,12 +97,12 @@
   var input = document.querySelector('.header__input-item');
   var footer = document.querySelector('.footer');
 
-  input.addEventListener('focus', function () {
-    footer.classList.add('footer_active');
-  });
-
-  input.addEventListener('blur', function () {
-    footer.classList.remove('footer_active');
-  });
-  
+  if (innerHeight < 300) {
+    input.addEventListener('focus', function () {
+      footer.classList.add('footer_active');
+    });
+    input.addEventListener('blur', function () {
+      footer.classList.remove('footer_active');
+    });
+  } 
 }());
