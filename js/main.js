@@ -2,12 +2,14 @@
   let arrDown = document.querySelector('.arr-down'),
       countriesHidden = document.querySelector('.header__countries_hidden'),
       headerCountries = document.querySelector('.header__countries'),
-      menu = document.querySelector('.menu');
+      menu = document.querySelector('.menu'),
+      footer = document.querySelector('.footer');
 
   headerCountries.addEventListener('click', () => {
     arrDown.classList.toggle('arr-down_active');
     countriesHidden.classList.toggle('header__countries_hidden_active');
-    menu.classList.toggle('menu-countries_active'); 
+    menu.classList.toggle('menu-countries_active');
+    footer.classList.toggle('footer-padding'); 
   });
 }());
 
@@ -17,7 +19,6 @@
       menuItemLink = document.querySelector('.menu__item-link'),
       listSub2 = document.querySelector('.menu__list-sub-2'),
       arrRight = document.querySelector('.arr-right'),
-      menu = document.querySelector('.menu'),
       footer = document.querySelector('.footer');
   
   menuItemLink.addEventListener('click', () => {
@@ -28,7 +29,6 @@
     for (let i = 0; i < menuItem.length; i++) {
       menuItem[i].classList.toggle('menu__item_active');
     } 
-    menu.classList.toggle('menu_active');
     footer.classList.toggle('footer_active');
   });
 }());
@@ -47,14 +47,14 @@
 (function() {
   let headerSearch = document.querySelector('.header__search'),
       form = document.querySelector('.header__form'),
-      headerCountriesBlock = document.querySelector('.header__countries-block'),
-      menu = document.querySelector('.menu');
+      footer = document.querySelector('.footer'),
+      headerCountriesBlock = document.querySelector('.header__countries-block');
 
-      headerSearch.addEventListener('click', () => {
+  headerSearch.addEventListener('click', () => {
     headerSearch.classList.toggle('active');
     form.classList.toggle('header__form_active');
     headerCountriesBlock.classList.toggle('header__countries_active');
-    menu.classList.toggle('menu-countries_active-2');
+    footer.classList.toggle('footer-padding-2');
   });
 }());
 

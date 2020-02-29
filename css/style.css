@@ -238,25 +238,21 @@ p {
 
 .wrapper-field {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menu {
-  margin-bottom: 177px;
   padding-top: 62px;
-}
-
-.menu_active {
-  margin-bottom: 0;
 }
 
 .menu-countries_active {
   margin-bottom: 107px;
-}
-
-.menu-countries_active-2 {
-  margin-bottom: 177px;
 }
 
 .menu__wrapper {
@@ -379,11 +375,19 @@ p {
 
 .footer {
   margin-top: auto;
-  padding-bottom: 6px;
+  padding-bottom: 60px;
 }
 
 .footer_active {
   display: none;
+}
+
+.footer-padding {
+  padding-bottom: 160px;
+}
+
+.footer-padding-2 {
+  padding-bottom: 60px;
 }
 
 .footer__contacts {
