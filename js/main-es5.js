@@ -92,3 +92,12 @@
     arrDown.classList.remove('arr-down_active');
   });
 })();
+
+(function() {
+  var input = document.querySelector('.header__input-item');
+  var footer = document.querySelector('.footer');
+
+  input.addEventListener('focus', function () {
+    footer.classList.toggle('footer_active');
+  });
+}());

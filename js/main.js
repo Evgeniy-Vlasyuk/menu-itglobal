@@ -96,3 +96,11 @@
   });
 }()); 
 
+(function() {
+  let input = document.querySelector('.header__input-item');
+  let footer = document.querySelector('.footer');
+
+  input.addEventListener('focus', () => {
+    footer.classList.toggle('footer_active');
+  });
+}());
