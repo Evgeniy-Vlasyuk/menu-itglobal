@@ -103,4 +103,8 @@
   input.addEventListener('focus', () => {
     footer.classList.toggle('footer_active');
   });
+
+  input.addEventListener('blur', () => {
+    footer.classList.remove('footer_active');
+  });
 }());
