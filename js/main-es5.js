@@ -102,10 +102,7 @@
       footer.classList.add('footer_active');
     });
     input.addEventListener('blur', function () {
-      function delay() {
-        footer.classList.remove('footer_active');
-      };
-      setTimeout(delay, 1000);
-    }); 
+      footer.classList.remove('footer_active');
+    });
   } 
 }());
