@@ -238,6 +238,8 @@ p {
 
 .wrapper-field {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu {
@@ -376,8 +378,8 @@ p {
 /* footer */
 
 .footer {
-  position: absolute;
-  bottom: 29px;
+  margin-top: auto;
+  padding-bottom: 6px;
 }
 
 .footer_active {

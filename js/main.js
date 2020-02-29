@@ -96,20 +96,3 @@
   });
 }()); 
 
-(function() {
-  let input = document.querySelector('.header__input-item');
-  let footer = document.querySelector('.footer');
-
-  if (innerHeight < 300) {
-    input.addEventListener('focus', () => {
-      footer.classList.add('footer_active');
-    });
-  
-    input.addEventListener('blur', () => {
-      function delay() {
-        footer.classList.remove('footer_active');
-      };
-      setTimeout(delay, 300);
-    }); 
-  } 
-}());

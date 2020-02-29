@@ -92,20 +92,3 @@
     arrDown.classList.remove('arr-down_active');
   });
 })();
-
-(function() {
-  var input = document.querySelector('.header__input-item');
-  var footer = document.querySelector('.footer');
-
-  if (innerHeight < 300) {
-    input.addEventListener('focus', function () {
-      footer.classList.add('footer_active');
-    });
-    input.addEventListener('blur', function () {
-      function delay() {
-        footer.classList.remove('footer_active');
-      };
-      setTimeout(delay, 300);
-    }); 
-  } 
-}());
